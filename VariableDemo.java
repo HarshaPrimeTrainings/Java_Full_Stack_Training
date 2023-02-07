@@ -9,10 +9,7 @@ class  VariableDemo{
 		System.out.println("Double : " + b);
 		System.out.println("Char : " + c);
 		System.out.println("Boolean : " + d);
-		
-		
-		
-		
+
 	}
 		
 		
