@@ -1,5 +1,6 @@
 package com.training;
 
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -41,9 +42,7 @@ public class ArrayListDemo {
 		}
 		
 		Iterator ir = al.iterator();
-		
 		System.out.println(" === Iterator === ");
-		
 		while(ir.hasNext()) {
 			System.out.println(ir.next());
 		}
