@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>gs</servlet-name>
+		<servlet-class>GenericDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>gs</servlet-name>
+		<url-pattern>/gsdemo</url-pattern>
+	</servlet-mapping>
+</web-app>
