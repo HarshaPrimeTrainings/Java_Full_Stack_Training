@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+
+
+  <display-name>productmanagement</display-name>
+
+	<context-param>
+		<param-name>dbuser</param-name>
+		<param-value>root</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>dbpwd</param-name>
+		<param-value>admin</param-value>
+	</context-param>
+
+	<servlet>
+		<servlet-name>insertservlet</servlet-name>
+		<servlet-class>com.productmanagement.InsertProdcutServlet</servlet-class>
+		<init-param>
+			<param-name>config1</param-name>
+			<param-value>Demo</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>insertservlet</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>searchservlet</servlet-name>
+		<servlet-class>com.productmanagement.SearchServlet</servlet-class>
+		<init-param>
+			<param-name>config2</param-name>
+			<param-value>Hello</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>searchservlet</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+</web-app>
